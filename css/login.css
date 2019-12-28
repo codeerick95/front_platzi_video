@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--main-font: 'Muli', sans-serif;;
+	--white: #fff;
+}
+
+body {
+	font-family: var(--main-font);
+	color: var(--white);
+}
+
+.header {
+	background-color: #21C08B;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	width: 200px;
+	margin-left: 2rem;
+}
+
+.login {
+	width: 100%;
+	background: linear-gradient(#21C08B, #AB88FF);
+	min-height: calc(100vh - 200px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.login__container {
+	background-color: rgba(255, 255, 255, .1);
+	width: 400px;
+	min-height: 700px;
+	border: 2px solid var(--white);
+	border-radius: .5rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.login__container--form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.login__container--remember-me {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+
+.label {
+	font-size: 1em;
+}
+
+.link {
+	font-size: 1em;
+	color: var(--white);
+	text-decoration: none;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.login__container--social-media > div {
+	display: flex;
+	align-items: center;
+	margin-bottom: .5rem;
+}
+
+.login__container--social-media > div > img {
+	width: 30px;
+	margin-right: 1rem;
+}
+
+.input {
+	font-family: var(--main-font);
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px solid var(--white);
+	outline: none;
+	margin-bottom: 1rem;
+	padding: 1rem .5rem;
+	height: 50px;
+}
+
+::placeholder {
+	color: var(--white);
+}
+
+.button {
+	background-color: rgba(255, 255, 255, .1);
+	color: var(--white);
+	border: 1px solid var(--white);
+	cursor: pointer;
+	padding: .5rem;
+}
+
+.footer {
+	background-color: #AB88FF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+
+.footer .link {
+	margin: 0 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.login__container {
+		width: 100%;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+	}
+}
